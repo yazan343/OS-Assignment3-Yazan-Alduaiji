@@ -339,9 +339,6 @@ class CpuWorker extends Thread {
             }
 
             Thread thread = readyQueue.poll();
-            if (thread == null) {
-                continue;
-            }
 
             Process process = readyQueue.processOf(thread);
             System.out.println(Colors.MAGENTA + "  ┌─ [CPU-" + cpuId + "] picks " + Colors.BRIGHT_CYAN +
