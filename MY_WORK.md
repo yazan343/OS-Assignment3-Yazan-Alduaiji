@@ -130,97 +130,126 @@
 
 ---
 
+
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - November 25, 2026, 12:09 AM
+
+**What I did**: Set up my GitHub repository and student ID.
 
 **Details**:
+- Forked and renamed the starter repository.
+- Configured Git using my university email.
+- Set my student ID to 446050343.
+- Ran the original program and saved its output.
+- Committed and pushed my changes.
 
-**Challenges**:
+**Challenges**: The original program produced incorrect results and thread errors.
 
-**Solution**:
+**Solution**: Identified the shared resources that needed synchronization.
 
-**Time spent**:
+**Time spent**: Approximately 20 minutes (estimated).
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - November 25, 2026, 12:35 AM
+
+**What I did**: Implemented Feature 1.
 
 **Details**:
+- Added a ReentrantLock called queueLock.
+- Protected add(), poll(), processOf(), and snapshot().
+- Used try/finally to release the lock safely.
+- Ran five tests and pushed the changes.
 
-**Challenges**:
+**Challenges**: Multiple CPUs could access the same process in the ready queue.
 
-**Solution**:
+**Solution**: Used a mutex lock to protect the shared list and map.
 
-**Time spent**:
+**Time spent**: Approximately 25 minutes.
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - November 25, 2026, 12:47 AM
+
+**What I did**: Implemented Feature 2.
 
 **Details**:
+- Added a ReentrantLock called statsLock.
+- Protected the three update methods and their getters.
+- Used one lock for all three shared statistics.
+- Ran five tests and pushed the changes.
 
-**Challenges**:
+**Challenges**: Some updates to the shared counters were lost.
 
-**Solution**:
+**Solution**: Protected the shared statistics using mutual exclusion.
 
-**Time spent**:
+**Time spent**: Approximately 15 minutes.
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - November 25, 2026, 1:03 AM
+
+**What I did**: Implemented Feature 3.
 
 **Details**:
+- Added a counting semaphore with an initial value of zero.
+- Used release() when adding processes.
+- Used acquire() before taking a process.
+- Added a shutdown signal for waiting CPUs.
+- Tested and pushed the changes.
 
-**Challenges**:
+**Challenges**: CPUs could remain blocked after all processes finished.
 
-**Solution**:
+**Solution**: Released permits for all CPUs when all processes were completed.
 
-**Time spent**:
+**Time spent**: Approximately 15 minutes.
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - November 25, 2026, 1:14 AM
+
+**What I did**: Completed the final correction and testing.
 
 **Details**:
+- Removed the remaining null polling branch.
+- Reviewed the changes using git diff.
+- Compiled the Java program successfully.
+- Ran five consecutive tests.
+- All four verification checks passed in every test.
+- Committed and pushed the final correction.
 
-**Challenges**:
+**Challenges**: An editor change was not saved correctly.
 
-**Solution**:
+**Solution**: Corrected the file and verified the changes before testing again.
 
-**Time spent**:
+**Time spent**: Approximately 10 minutes.
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
+### Entry 6 - Optional
 
-**Details**:
+**What I did**: Not applicable.
 
-**Challenges**:
+**Details**: Five development entries are recorded above.
 
-**Solution**:
+**Challenges**: Not applicable.
 
-**Time spent**:
+**Solution**: Not applicable.
+
+**Time spent**: Not applicable.
 
 ---
 
 ## Development Log Summary
 
-> 💡 **TIP:** Fill this in **last**, after all entries are written.
+**Total time spent on assignment**: Approximately 1 hour and 25 minutes for setup, implementation, and testing, excluding documentation and video recording.
 
-**Total time spent on assignment**: [X hours]
+**Most challenging part**: Implementing the counting semaphore and ensuring that all CPUs terminate correctly.
 
-**Most challenging part**:
+**Most interesting learning**: Understanding how mutex locks prevent race conditions and how semaphores eliminate busy waiting.
 
-**Most interesting learning**:
-
-**What I would do differently next time**:
+**What I would do differently next time**: Start earlier, spread the work across multiple days, and document each development session immediately.
 
 ---
 
