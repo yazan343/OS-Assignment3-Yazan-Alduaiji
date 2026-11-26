@@ -227,17 +227,24 @@
 
 ---
 
-### Entry 6 - Optional
+### Entry 6 - November 26, 2026, 06:07 PM
 
-**What I did**: Not applicable.
+**What I did**: Final review and verification testing.
 
-**Details**: Five development entries are recorded above.
+**Details**:
 
-**Challenges**: Not applicable.
+- Compiled SchedulerSimulationSync.java successfully.
+- Ran an additional test on the final version.
+- Verified 13 context switches and 10 completed processes.
+- Verified total service time of 19434 ms.
+- Confirmed zero busy-waiting polls.
+- All four verification checks passed.
 
-**Solution**: Not applicable.
+**Challenges**: No new errors occurred during testing.
 
-**Time spent**: Not applicable.
+**Solution**: Compared the observed values with the expected values to confirm correctness.
+
+**Time spent**: Not measured.
 
 ---
 
